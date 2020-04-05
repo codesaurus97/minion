@@ -1,0 +1,5 @@
+setup.py
+minion.egg-info/PKG-INFO
+minion.egg-info/SOURCES.txt
+minion.egg-info/dependency_links.txt
+minion.egg-info/top_level.txt

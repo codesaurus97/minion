@@ -1,0 +1,24 @@
+name: build-lib
+desc: Build a new example library for software release
+os: 
+  - windows
+  - linux
+  - mac
+glob: 
+  libpath: /Users/marcellpigniczki/Desktop/
+jobs:
+  test1:
+    desc: Hello, this is a simple job test
+    steps:
+    - step:
+      name: Go to work directory
+      type: default
+      cmd : ls -l
+      args: 
+        - /Users/marcellpigniczki/Desktop
+    - step:
+      name: Create a demo file
+      type: default
+      cmd : echo 
+      args: 
+        - Hello World > {{libpath}}hello.txt
